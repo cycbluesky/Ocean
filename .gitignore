@@ -1,0 +1,74 @@
+# https://github.com/github/gitignore
+
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Files ignored
+*.obj
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.sln.docstates
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.tmp
+*.dll0
+#*.dll*
+
+# min files of need to commit
+!**/assets/js/**/*.min.js
+!**/assets/css/**/*.min.css
+
+# Folders ignored
+_[Oo]utput/
+[Bb]in/
+#[Dd]ebug*/
+#[Rr]elease*/
+obj/
+_ReSharper*/
+[Tt]est[Rr]esult*
+
+# NuGet files
+packages/
+*.nupkg
+
+# NCrunch files
+*.ncrunchsolution
+*.ncrunchproject
+*_NCrunch_*/
+# src/QY.TrainPlus.Web/wwwroot2/
+# Publish Web Output
+*.Publish.xml
+
+# Mac
+*.DS_Store
+*node_modules
+
+# Publish profiles
+*/Properties/PublishProfiles/
+
+# higher version of VS
+*.sublime-workspace
+*.sublime-project
+.vs
+[Uu]pload/
+design
+temp/
+/src/QY.TrainPlus.Web/admin
+App_Data
+deploy

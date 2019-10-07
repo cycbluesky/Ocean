@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  ocean-api:
+    image: cycsky/ocean-api-service
+    build:
+      context: .
+      dockerfile: src/Ocean.Api/Dockerfile
+
+  ocean-web:
+    image: cycsky/ocean-web-service
+    build:
+      context: .
+      dockerfile: src/Ocean.Web/Dockerfile
+
