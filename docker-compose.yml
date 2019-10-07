@@ -1,15 +1,47 @@
-version: '3.4'
+version: '3.7'
 
 services:
-  ocean-api:
-    image: cycsky/ocean-api-service
-    build:
-      context: .
-      dockerfile: src/Ocean.Api/Dockerfile
-
   ocean-web:
     image: cycsky/ocean-web-service
     build:
       context: .
       dockerfile: src/Ocean.Web/Dockerfile
+    depends_on:
+      - postgresdb
 
+  ocean-api:
+    image: cycsky/ocean-api-service
+    build:
+      context: .
+      dockerfile: src/Ocean.Api/Dockerfile
+    depends_on:
+      - postgresdb
+
+  postgresdb:
+    image: postgres:9.6.15
+    restart: always
+    ports:
+      - "15432:5432"
+    volumes:
+      - ocean_db_data:/var/lib/postgresql/data/pgdata
+    environment:
+      POSTGRES_PASSWORD: ocean@123
+      PGDATA: /var/lib/postgresql/data/pgdata
+
+  pgAdmin:
+    image: dpage/pgadmin4
+    ports:
+      - "8088:80"
+    volumes:
+      - ocean_pgAdmin_data:/var/lib/pgAdmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@domain.com
+      PGADMIN_DEFAULT_PASSWORD: user@123
+    depends_on:
+      - postgresdb
+
+volumes:
+  ocean_db_data: 
+    external: true
+  ocean_pgAdmin_data: 
+    external: true

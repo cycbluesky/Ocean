@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocean.Api", "src\Ocean.Api\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocean.Data", "src\Ocean.Data\Ocean.Data.csproj", "{DD6F1695-AF9A-4B6E-9286-FD1251D8B49F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocean.Domain", "src\Ocean.Domain\Ocean.Domain.csproj", "{44FDEF6C-DE8D-4EA3-9D79-6D48992C2528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocean.Domain", "src\Ocean.Domain\Ocean.Domain.csproj", "{44FDEF6C-DE8D-4EA3-9D79-6D48992C2528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocean.Service", "src\Ocean.Service\Ocean.Service.csproj", "{4AB54A53-CBC9-4C23-B7B4-683DBC9B8614}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocean.Service", "src\Ocean.Service\Ocean.Service.csproj", "{4AB54A53-CBC9-4C23-B7B4-683DBC9B8614}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocean.Common", "src\Ocean.Common\Ocean.Common.csproj", "{762F1824-7DDC-45E7-93AA-9406BD334FDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocean.Common", "src\Ocean.Common\Ocean.Common.csproj", "{762F1824-7DDC-45E7-93AA-9406BD334FDC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F24230FC-C039-4CF7-8C82-72BEDBE24525}"
 	ProjectSection(SolutionItems) = preProject
@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8934F5CC-9267-49EC-8746-BA26A1654887}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5710DB78-C7AE-49BD-875D-BB88581CCBEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14115971-0017-4C7E-B763-CA790630E9DF} = {5710DB78-C7AE-49BD-875D-BB88581CCBEB}
+		{C070FA5D-E90C-4215-B8A3-51F0C0785F2F} = {5710DB78-C7AE-49BD-875D-BB88581CCBEB}
+		{DD6F1695-AF9A-4B6E-9286-FD1251D8B49F} = {5710DB78-C7AE-49BD-875D-BB88581CCBEB}
+		{44FDEF6C-DE8D-4EA3-9D79-6D48992C2528} = {5710DB78-C7AE-49BD-875D-BB88581CCBEB}
+		{4AB54A53-CBC9-4C23-B7B4-683DBC9B8614} = {5710DB78-C7AE-49BD-875D-BB88581CCBEB}
+		{762F1824-7DDC-45E7-93AA-9406BD334FDC} = {5710DB78-C7AE-49BD-875D-BB88581CCBEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BD92F124-C1A9-432C-AF4A-FBAA29A76843}
